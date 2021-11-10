@@ -16,12 +16,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/projects" element={<Projects URL={URL}/>}/>
-        <Route exact path="/about" element={<About URL={URL}/>}/>
-      </Routes>
-      <Footer />
+      <div className="flex-wrapper">
+        <div className="project-wrapper">
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/projects" element={<Projects URL={URL}/>}/>
+            <Route exact path="/about" element={<About URL={URL}/>}/>
+          </Routes>
+        </div>
+        <Footer/>
+      </div>
+        
     </div>
   );
 }

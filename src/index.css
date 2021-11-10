@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,138 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80");
+  background-size: cover;
+}
+
+/* .App {
+  border: 2px dashed orangered;
+  width: 100%;
+} */
+
+.flex-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ============ NAV BAR ============ */
+
+nav {
+  /* border: 2px dashed orange; */
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  /* border-bottom: 1.7px dashed rgb(232, 232, 232); */
+}
+
+nav .links {
+  /* border: 2px dashed purple; */
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 25px; 
+}
+
+/* ============= LINKS ============= */
+
+a {
+  /* border: 2px dashed purple; */
+  text-decoration: none;
+  color: teal;
+}
+a:hover {
+  color: rgb(78, 54, 97);
+  opacity: .7;
+}
+
+/* ============ PROJECTS =========== */
+
+.github {
+  color:rgb(126, 126, 126);
+  width: fit-content;
+}
+.display {
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255,255,255, 0.85);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0.7% 2%;
+  /* margin: 5% 2% 0 2%; */
+  margin: 100px 2% 100px 2%;
+  height: 25em;
+}
+.projects:hover {
+  background-color: white;
+  transition: 0.2s ease;
+}
+
+#project-img {
+  height: 250px;
+  width: 300px;
+  border-radius: 6px;
+}
+
+.projects h5 {
+  color: black;
+}
+
+/* =========== FOOTER ============ */
+
+.Footer {
+  background: black;
+  color: white;
+  /* padding: 4%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .socials {
+  background: white;
+  width: 97.5%;
+  text-align: center;
+  padding: 20px;
+}
+.Footer .socials a {
+  margin: 25px;
+  /* text-decoration: underline; */
+}
+.Footer .more {
+  display: flex;
+  padding: 20px;
+}
+.Footer .more a {
+  color: white;
+  margin: 0 25px;
+}
+.Footer .more a:hover {
+  color: rgb(17, 255, 255);
+}
+.Footer p {
+  padding-bottom: 20px;
 }

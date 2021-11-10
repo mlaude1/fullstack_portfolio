@@ -11,22 +11,24 @@ function Header(props) {
     margin: "auto",
   };
 
-  return (
-    <header>
-      <h1>My Portfolio Page</h1>
-      <nav style={navStyle}>
-        <Link to="/">
-          <div>HOME</div>
-        </Link>
-        <Link to="/about">
-          <div>ABOUT</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
-        </Link>
+  return <div className="Header">
+      <nav>
+        <h1>Matthew Laude</h1>
+        <div className="links">
+          <Link to="/">
+            <div>Home</div>
+          </Link>
+          <Link to="/about">
+            <div>About</div>
+          </Link>
+          <Link to="/projects">
+            <div>Projects</div>
+          </Link>
+          <a href="https://github.com/mlaude1" target="_blank">GitHub <i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthew-laude-909a00141/" target="_blank">Linked <i class="fab fa-linkedin"></i></a>
+        </div>
       </nav>
-    </header>
-  );
+    </div>
 }
 
 export default Header;
