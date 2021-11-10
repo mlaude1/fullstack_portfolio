@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto+Mono:wght@600&family=Sansita+Swashed:wght@700&display=swap');
 
 body {
   margin: 0;
@@ -34,7 +35,7 @@ code {
     monospace;
 }
 
-/* ============ NAV BAR ============ */
+/* ============ NAV HEADER ============ */
 
 nav {
   /* border: 2px dashed orange; */
@@ -43,15 +44,17 @@ nav {
   background: white;
   /* border-bottom: 1.7px dashed rgb(232, 232, 232); */
 }
-
 nav .links {
   /* border: 2px dashed purple; */
   display: flex;
   align-items: center;
 }
-
 nav a {
   margin: 25px; 
+}
+.Header h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 1.7em;
 }
 
 /* ============= LINKS ============= */
@@ -64,6 +67,46 @@ a {
 a:hover {
   color: rgb(78, 54, 97);
   opacity: .7;
+}
+
+/* ============ ABOUT =========== */
+
+.About {
+  /* border: 2px dashed orangered; */
+  text-align: left;
+  /* width: 100%; */
+  /* height: 100vh; */
+  display: flex;
+  margin-top: 50px;
+}
+.About .left {
+  /* border: 2px dashed purple; */
+  width: 40%;
+  padding: 0 5%;
+  color: rgb(235, 235, 235);
+  font-size: 1.2em;
+  font-family: 'Roboto Mono', monospace;
+}
+.left h2 {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2em;
+}
+.left h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 1.2em
+}
+
+.About .right {
+  /* border: 2px dashed greenyellow; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.About img {
+  height: 500px;
+  /* border: 2px solid black; */
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ============ PROJECTS =========== */
@@ -85,6 +128,7 @@ a:hover {
   width: fit-content;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
   padding: 0.7% 2%;
